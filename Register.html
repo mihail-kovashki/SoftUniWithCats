@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="site-header-home">
+            <nav>
+                <ul id="top-navbar">
+                    <li id="logo"><a href="SssoftUni.html"><i class="fa fa-university" aria-hidden="true"></i><span>SssoftUni</span></a></li>
+                    <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i><span>За нассс</span></a></li>
+                    <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i><span>Курррсове</span></a></li>
+                    <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i><span>Лектoррри</span></a></li>
+                    <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i><span>Пъррртньори</span></a></li>
+                    <li><a href="Register.html"><i class="fa fa-paw" aria-hidden="true"></i><span>Регистрация</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form method="post" id="register-form" enctype="multipart/form-data">
+                <div class="left-contact">
+                    <div class="form-group">
+
+                        <p>Name<span>*</span></p>
+                        <label class="form-icon" for="name"><i class="fa fa-user"></i></label>
+                        <input type="text" name="name" id="name"  required/>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <p>E-mail <span>*</span></p>
+                        <label class="form-icon" for="email"><i class="fa fa-envelope-o"></i></label>
+                        <input type="email" name="email" id="email" placeholder="e.g. ilovecats@purrr.com" required/>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <p>Breed <span>*</span></p>
+                        <label class="form-icon" for="breed"><i class="fa fa-paw" aria-hidden="true"></i></label>
+                        <select name="breed" id="breed" required>
+                            <option value="">Siamese</option>
+                            <option value="">Persian</option>
+                            <option value="">Bengal</option>
+                            <option value="">American Shorthair</option>
+                            <option value="">Angora</option>
+                            <option value="">Scottish Fold</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="right-contact">
+
+                    <div class="form-group">
+
+                        <p>Password <span>*</span></p>
+                        <label class="form-icon" for="password"><i class="fa fa-lock" aria-hidden="true"></i></label>
+                        <input type="password" name="password" id="password" required/>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <p>Repeat password <span>*</span></p>
+                        <label class="form-icon" for="password-repeat"><i class="fa fa-lock" aria-hidden="true"></i></label>
+                        <input type="password" name="password-repeat" id="password-repeat" required/>
+                    </div>
+
+                    <div class="form-group">
+
+                        <p>Owners' address</p>
+                        <label class="form-icon" for="address"><i class="fa fa-building-o" aria-hidden="true"></i></label>
+                        <textarea name="address" id="address"></textarea>
+
+                    </div>
+
+                </div>
+
+                <button type="submit" class="register-button">Regissster</button>
+
+            </form>
+        </main>
+    </div>
+</body>
+</html>
