@@ -55,7 +55,7 @@ table {
 
 .site-header{
 
-    min-height: 400px;
+    min-height: 500px;
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -64,19 +64,24 @@ table {
 #home-site-header{
     background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url("images/cat_using_computer-computer-cats.jpg");
     background-size: cover;
-    height: 700px;
+
+}
+
+header.site-header nav{
+    background: #94618e;
+    min-height:50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 nav #top-navbar {
-
+    min-height: 50px;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background: #94618e;
-    height:50px;
     align-items: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    vertical-align: middle;
 }
 
 #top-navbar li{
@@ -118,17 +123,41 @@ nav #top-navbar {
 }
 
 
+#menu-holder{
+    display: none;
+    height: 50px;
+}
+
+#menu-icon{
+    position: absolute;
+    width:40px;
+    height: 40px;
+    font-size: 2rem;
+    text-decoration: none;
+    color:#f4decb;
+    background: #49274a;
+    line-height: 1.2;
+    top:5px;
+    left:10px;
+}
+
+#menu-icon:hover{
+    color: #49274a;
+    background: #f4decb;
+}
+
+
 .site-header div h1{
     font-size: 3em;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     color: #F4DECB;
     text-shadow: 0 0 3px black;
 }
 
 .slider-button{
     font-size: 1.11rem;
-    margin: 30px auto;
+    margin: 30px auto 0px auto;
     width: 150px;
     display: block;
     text-decoration: none;
@@ -139,15 +168,19 @@ nav #top-navbar {
     color: #F4DECB;
 }
 
+.fix{
+   padding-bottom: 30px;
+}
+
 .slider-button:hover{
     box-shadow: 0 0 5px black;
 }
 
 .site-footer{
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    padding: 50px;
+    padding: 50px 20px;
     background-color: #94618e;
     min-height:200px;
     border-top-left-radius: 10px;
@@ -161,11 +194,14 @@ nav #top-navbar {
 }
 
 .site-footer ul{
-    padding-left:30px;
-    width: 300px;
+    flex-grow: 1;
+    padding-left:20px;
+    flex-basis: 300px;
+    margin-bottom: 10px;
 }
 
 .site-footer ul li{
+    list-style: none;
     font-size: 1rem;
     padding: 5px 0;
     color: #F8EEE7;
@@ -208,6 +244,110 @@ nav #top-navbar {
     padding-right: 13px;
     font-size: 1.1rem;
 }
+
+/*responsive*/
+
+@media screen and (max-width: 850px) {
+    nav #top-navbar{
+        display: none;
+        flex-direction: column;
+    }
+
+    nav #top-navbar li{
+        width: 100%;
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid #f4decb;
+        padding: 10px;
+    }
+
+    nav #top-navbar li#logo a{
+        font-size: 1.3rem;
+    }
+
+    nav #top-navbar li#logo a span{
+        font-family: 'Exo 2', sans-serif;
+        color: #F8EEE7;
+    }
+
+    nav:hover #top-navbar{
+        display: block;
+    }
+
+    #menu-holder{
+        display: block;
+    }
+
+
+}
+
+
+
+
+
+/* Courses page */
+
+#site-header-courses{
+    height: 550px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url("images/study-cat.jpg");
+    background-size: cover;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F4DECB;
+    border-radius: 10px;
+}
+
+.course-container .course{
+    background-color: #F8EEE7;
+    margin: 10px;
+    border-radius: 10px;
+    opacity: 1;
+    color: #49274a;
+    padding: 30px 20px;
+    transition: all 0.7s;
+}
+
+.course-container .course .photo{
+    float:left;
+    margin-right: 20px;
+}
+
+.course-container .course .photo img{
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+.course-container .course .details .name{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.course-container .course .details .description{
+    margin-bottom: 40px;
+}
+
+.course-container .course .details .course-button{
+    border: none;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    background: #49274a;
+    color:#F4DECB;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.course-container .course .details .course-button:hover{
+    box-shadow: 0 0 5px #49274a;
+    text-shadow: 1px 1px 5px #f4decb;
+}
+
 
 
 /*Team page*/
@@ -272,6 +412,13 @@ nav #top-navbar {
 
 
 /*Register page*/
+
+
+#site-header-register{
+    height: 500px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url("images/CatWrite.jpg");
+    background-size: cover;
+}
 
 .left-column, .right-column {
     width:50%;
