@@ -8,25 +8,33 @@
 </head>
 <body>
     <div id="wrapper">
-        <header id="site-header-home">
+        <header id="site-header">
             <nav>
                 <ul id="top-navbar">
                     <li id="logo"><a href="SssoftUni.html"><i class="fa fa-university" aria-hidden="true"></i><span>SssoftUni</span></a></li>
-                    <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i><span>За нассс</span></a></li>
                     <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i><span>Курррсове</span></a></li>
                     <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i><span>Лектoррри</span></a></li>
                     <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i><span>Пъррртньори</span></a></li>
                     <li><a href="Register.html"><i class="fa fa-paw" aria-hidden="true"></i><span>Регистрация</span></a></li>
+                    <li><a href="#"><i class="fa fa-paw" aria-hidden="true"></i><span>За нассс</span></a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <form method="post" id="register-form" enctype="multipart/form-data">
-                <div class="left-contact">
+                <div class="left-column">
                     <div class="form-group">
 
-                        <p>Name<span>*</span></p>
+                        <p>Име на собственика<span>*</span></p>
                         <label class="form-icon" for="name"><i class="fa fa-user"></i></label>
+                        <input type="text" name="name" id="name"  required/>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <p>Име на котката<span>*</span></p>
+                        <label class="form-icon" for="name"><i class="fa fa-github-alt" aria-hidden="true"></i></label>
                         <input type="text" name="name" id="name"  required/>
 
                     </div>
@@ -41,24 +49,25 @@
 
                     <div class="form-group">
 
-                        <p>Breed <span>*</span></p>
+                        <p>Порода <span>*</span></p>
                         <label class="form-icon" for="breed"><i class="fa fa-paw" aria-hidden="true"></i></label>
                         <select name="breed" id="breed" required>
-                            <option value="">Siamese</option>
-                            <option value="">Persian</option>
-                            <option value="">Bengal</option>
-                            <option value="">American Shorthair</option>
-                            <option value="">Angora</option>
-                            <option value="">Scottish Fold</option>
+                            <option value="0"></option>
+                            <option value="1">Siamese</option>
+                            <option value="2">Persian</option>
+                            <option value="3">Bengal</option>
+                            <option value="4">American Shorthair</option>
+                            <option value="5">Angora</option>
+                            <option value="6">Scottish Fold</option>
                         </select>
                     </div>
 
                 </div>
-                <div class="right-contact">
+                <div class="right-column">
 
                     <div class="form-group">
 
-                        <p>Password <span>*</span></p>
+                        <p>Парола <span>*</span></p>
                         <label class="form-icon" for="password"><i class="fa fa-lock" aria-hidden="true"></i></label>
                         <input type="password" name="password" id="password" required/>
 
@@ -66,14 +75,14 @@
 
                     <div class="form-group">
 
-                        <p>Repeat password <span>*</span></p>
+                        <p>Повторете паролата <span>*</span></p>
                         <label class="form-icon" for="password-repeat"><i class="fa fa-lock" aria-hidden="true"></i></label>
                         <input type="password" name="password-repeat" id="password-repeat" required/>
                     </div>
 
                     <div class="form-group">
 
-                        <p>Owners' address</p>
+                        <p>Адрес на собственика</p>
                         <label class="form-icon" for="address"><i class="fa fa-building-o" aria-hidden="true"></i></label>
                         <textarea name="address" id="address"></textarea>
 
@@ -81,10 +90,55 @@
 
                 </div>
 
-                <button type="submit" class="register-button">Regissster</button>
+                <button type="submit" class="register-button">Регистрация</button>
 
             </form>
         </main>
+        <footer class="site-footer">
+            <ul>
+                <li>
+                    <h4>Връзки</h4>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="SssoftUni.html">SssoftUni</a></li>
+                        <li><a href="#">Курррсове</a></li>
+                        <li><a href="#">Лектoррри</a></li>
+                        <li><a href="#">Пъррртньори</a></li>
+                        <li><a href="Register.html">Регистрация</a></li>
+                        <li><a href="#">За нассс</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>Контакти</h4>
+                </li>
+                <li>
+                    <ul>
+                        <li>E-mail: <span>wehatedogs@sssoftuni.com</span></li>
+                        <li>Телефон: <span>02/1337-1337</span></li>
+                        <li>Адрес: <span>София, кв. Изгрев, ул. "Тинтява" 15-17, етаж 1</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h4>Харесайте ни</h4>
+                </li>
+                <li>
+                    <ul class="like-us">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>
