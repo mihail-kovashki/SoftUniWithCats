@@ -54,7 +54,6 @@ table {
 }
 
 .site-header{
-
     min-height: 500px;
     text-align: center;
     border-bottom-left-radius: 10px;
@@ -64,7 +63,6 @@ table {
 #home-site-header{
     background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url("images/cat_using_computer-computer-cats.jpg");
     background-size: cover;
-
 }
 
 header.site-header nav{
@@ -224,7 +222,6 @@ nav #top-navbar {
 }
 
 .site-footer .like-us a .fa{
-
     font-size: 1.2rem;
     line-height: 10px;
     height: 13px;
@@ -318,7 +315,6 @@ nav #top-navbar {
     box-shadow: 0 0 5px #49274a;
     text-shadow: 1px 1px 5px #f4decb;
 }
-
 
 /*Team page*/
 
