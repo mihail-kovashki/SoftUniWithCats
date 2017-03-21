@@ -245,6 +245,15 @@ nav #top-navbar {
     font-size: 1.1rem;
 }
 
+.site-footer ul li p #soft-uni-link{
+    font-weight:bold;
+}
+.site-footer ul li p #soft-uni-link:hover{
+    color:#49274a;
+    text-shadow: 1px 1px 5px #F4DECB;
+}
+
+
 /*responsive*/
 
 @media screen and (max-width: 850px) {
@@ -280,9 +289,6 @@ nav #top-navbar {
 
 
 }
-
-
-
 
 
 /* Courses page */
@@ -349,7 +355,6 @@ nav #top-navbar {
 }
 
 
-
 /*Team page*/
 
 #site-header-team{
@@ -407,9 +412,45 @@ nav #top-navbar {
     padding: 10px 20px;
 }
 
+/* Partners page */
+
+#site-header-partners{
+    height: 550px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%), url("images/cuddling-cats.jpg");
+    background-size: cover;
+}
+
+.partners-container{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    background-color: #F4DECB;
+    border-radius: 10px;
+    padding: 20px;
+}
 
 
+.partners-container .partner{
+    max-width: 250px;
+    flex-grow: 1;
+    text-align: center;
+    background: #F8EEE7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
 
+
+.partners-container .partner .photo-partners:hover img{
+    box-shadow: 8px 8px 10px #49274a;
+    opacity: 1.0;
+}
+
+.partners-container .partner .photo-partners img{
+    max-height: 250px;
+    opacity: 0.8;
+    transition: all 0.8s;
+}
 
 /*Register page*/
 
